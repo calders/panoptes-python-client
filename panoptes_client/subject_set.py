@@ -30,7 +30,7 @@ class SubjectSet(PanoptesObject):
             _subjects.append(subject.id)
 
         self.post(
-            '{}/links/subjects'.format(self.id),
+            '{0}/links/subjects'.format(self.id),
             json={'subjects': _subjects}
         )
 

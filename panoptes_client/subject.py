@@ -74,7 +74,7 @@ class Subject(PanoptesObject):
 
         image_type = imghdr.what(f)
         self.locations.append(
-            'image/{}'.format(image_type)
+            'image/{0}'.format(image_type)
         )
         self._image_files.append(f)
 
